@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        tools:context=".Tugas3b">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/tugas3a"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            tools:context="com.udacity.myapplication.MainActivity">
+            <TextView
+                android:id="@+id/textBefore"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sebelum"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/textAfter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sesudah"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            tools:context=".Tugas3b">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- keluarga tombol A -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nilai A : "
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+            <SeekBar
+                android:id="@+id/seekbarA"
+                android:paddingTop="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="100"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:id="@+id/progressA"
+            android:textSize="12dp"
+            android:text="current a value = 40"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- keluarga tombol B -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nilai B : "
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+            <SeekBar
+                android:id="@+id/seekbarB"
+                android:paddingTop="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="100"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:id="@+id/progressB"
+            android:textSize="12dp"
+            android:text="current b value = 50"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- keluarga tombol C -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nilai C : "
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+            <SeekBar
+                android:id="@+id/seekbarC"
+                android:paddingTop="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="100"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:id="@+id/progressC"
+            android:textSize="12dp"
+            android:text="current c value = 30"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="8dp"
+            android:text="Fabricated Histogram"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/fabHist" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="applyChanges"
+            android:padding="8dp"
+            android:text="Apply Changes"
+            android:layout_gravity="center"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="8dp"
+            android:text="Original Image CDF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/oriCDF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="8dp"
+            android:text="Fabricated CDF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/fabCDF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="8dp"
+            android:text="LUT from old to new value"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/mapMatchDisp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="8dp"
+            android:text="Result Histogram - Spec Approximation"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/rcDisp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:fillViewport="false">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tan_background"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_message"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas1"
+            android:background="@color/color1"
+            android:text="@string/tugas1" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas2"
+            android:background="@color/color2"
+            android:text="@string/tugas2" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas2b"
+            android:background="@color/color3"
+            android:text="@string/tugas2b" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas3a"
+            android:background="@color/color4"
+            android:text="@string/tugas3a" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas3b"
+            android:background="@color/color1"
+            android:text="@string/tugas3b" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas4a"
+            android:background="@color/color2"
+            android:text="@string/tugas4a" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas4b"
+            android:background="@color/color3"
+            android:text="@string/tugas4b" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas5"
+            android:background="@color/color4"
+            android:text="@string/tugas5" />
+
+    </LinearLayout>
+</ScrollView>

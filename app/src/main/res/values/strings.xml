@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pengenalan Pola 23217008</string>
+    <string name="welcome_message">Aplikasi ini berisi kompilasi tugas kuliah IF5181 Pengenalan Pola yang dikerjakan oleh: \n Nama : Fabiola Maria \n NIM : 23217008</string>
+    <string name="tugas1">Tugas 1 Pengenalan Histogram</string>
+    <string name="tugas2">Tugas 2 Histogram Equalization</string>
+    <string name="tugas2b">Tugas 2 Weighted Histogram Equalization</string>
+    <string name="tugas3a">Tugas 3 Histogram Specification</string>
+    <string name="tugas3b">Tugas 3 Image Smoothing</string>
+    <string name="tugas4a">Tugas 4 Number Detection (Arial)</string>
+    <string name="tugas4b">Tugas 4 Number Detection (Block)</string>
+    <string name="tugas5">Tugas 5 Skeleton Extraction</string>
+</resources>
