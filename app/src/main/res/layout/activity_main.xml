@@ -71,5 +71,22 @@
             android:background="@color/color4"
             android:text="@string/tugas5" />
 
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas6"
+            android:background="@color/color1"
+            android:text="@string/tugas6" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas7"
+            android:background="@color/color2"
+            android:text="@string/tugas7" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas8dan9"
+            android:background="@color/color3"
+            android:text="@string/tugas8dan9" />
     </LinearLayout>
 </ScrollView>

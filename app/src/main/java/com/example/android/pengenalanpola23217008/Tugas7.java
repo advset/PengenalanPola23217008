@@ -17,7 +17,7 @@ import com.example.android.pengenalanpola23217008.util.NewImageUtil;
 
 import java.util.List;
 
-public class UTS extends AppCompatActivity {
+public class Tugas7 extends AppCompatActivity {
     private int[][] charNum = {{0,3,3,3,3,3,1,2,0,1},{2,8,64,0,74,384,1,256,133,4}};
     private int[][] charUpper = {{2,0,2,0,3,3,2,4,2,2,4,2,4,4,0,1,2,2,2,3,2,2,5,4,3,2},
             {68,485,0,354,480,416,0,168,8,8,32,96,40,40,2,420,2,420,0,272,40,0,0,0,0,320}};
@@ -27,7 +27,7 @@ public class UTS extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_uts);
+        setContentView(R.layout.activity_tugas7);
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
@@ -75,7 +75,6 @@ public class UTS extends AppCompatActivity {
                 int greenVal = Color.green(color);
                 int blueVal = Color.blue(color);
                 int bwVal = (redVal+greenVal+blueVal)/3;
-
                 if(bwVal > 100){
                     bwBitmap.setPixel(j,i,0xFFFFFFFF);
                 }
@@ -93,8 +92,7 @@ public class UTS extends AppCompatActivity {
         TextView debugText = findViewById(R.id.debugText);
         String textForDebugText = "";
         String textForResult = "";
-        //List<int[]> info = new ArrayList<int[]>();
-        //info = NewImageUtil.getSkeletonFeature(image,debugText);
+
         List<int[]> info = NewImageUtil.getSkeletonFeature(image,debugText);
         for(int i = 0; i<info.size(); i++){
             int kick[] = info.get(i);
@@ -102,11 +100,6 @@ public class UTS extends AppCompatActivity {
             int result = inference(kick[0],kick[1]);
             textForResult = textForResult + (char)result;
         }
-        /* for(int i = 0; i<info.size(); i++){
-            int[] junk = info.get(i);
-            textForDebugText = textForDebugText + junk[0] + " | " + junk[1] + " | ";
-        }
-        textForResult = textForResult + info.size(); */
 
         debugText.setText(textForDebugText);
 

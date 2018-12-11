@@ -9,4 +9,7 @@
     <string name="tugas4a">Tugas 4 Number Detection (Arial)</string>
     <string name="tugas4b">Tugas 4 Number Detection (Block)</string>
     <string name="tugas5">Tugas 5 Skeleton Extraction</string>
+    <string name="tugas6">Tugas 6 (UTS) ASCII Character Recognition</string>
+    <string name="tugas7">Tugas 7 Handwriting Character Recognition</string>
+    <string name="tugas8dan9">Tugas 8 dan 9 Face Detection</string>
 </resources>

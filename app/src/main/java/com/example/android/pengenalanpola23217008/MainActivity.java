@@ -117,5 +117,44 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(tugas5Intent);
             }
         });
+
+        // Find the View that shows the Tugas 6
+        TextView tugas6 = (TextView) findViewById(R.id.tugas6);
+
+        // Set a click listener on that View
+        tugas6.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent tugas6Intent = new Intent(MainActivity.this, UTS.class);
+                startActivity(tugas6Intent);
+            }
+        });
+
+        // Find the View that shows the Tugas 7
+        TextView tugas7 = (TextView) findViewById(R.id.tugas7);
+
+        // Set a click listener on that View
+        tugas7.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent tugas7Intent = new Intent(MainActivity.this, Tugas7.class);
+                startActivity(tugas7Intent);
+            }
+        });
+
+        // Find the View that shows the Tugas 8 & 9
+        TextView tugas8dan9 = (TextView) findViewById(R.id.tugas8dan9);
+
+        // Set a click listener on that View
+        tugas8dan9.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent tugas8dan9Intent = new Intent(MainActivity.this, Tugas8dan9.class);
+                startActivity(tugas8dan9Intent);
+            }
+        });
     }
 }

@@ -42,7 +42,15 @@
         <activity
             android:name=".Tugas5"
             android:label="@string/tugas5" />
-        <activity android:name=".UTS"></activity>
+        <activity
+            android:name=".UTS"
+            android:label="@string/tugas6" />
+        <activity
+            android:name=".Tugas7"
+            android:label="@string/tugas7"/>
+        <activity
+            android:name=".Tugas8dan9"
+            android:label="@string/tugas8dan9"/>
     </application>
 
 </manifest>

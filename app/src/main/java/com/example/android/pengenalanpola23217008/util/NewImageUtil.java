@@ -5,6 +5,9 @@ import android.widget.TextView;
 
 import com.example.android.pengenalanpola23217008.model.SkeletonFeature;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class NewImageUtil {
 
     // -----------------------------
@@ -73,7 +76,7 @@ public class NewImageUtil {
         };
     }
 
-    public static int[] getSkeletonFeature(Bitmap bitmap, TextView textView) {
+    public static List<int[]> getSkeletonFeature(Bitmap bitmap, TextView textView) {
         int count;
         int[] border, border2;
 
@@ -87,7 +90,9 @@ public class NewImageUtil {
         bitmap.getPixels(pixels, 0, width, 0, 0, width, height);
         bitmap.getPixels(pixelsa, 0, width, 0, 0, width, height);
 
-        int[] myarray = new int[2];
+        List<int[]> myList = new ArrayList<int[]>();
+        myList.clear();
+        int detectedCounter = 0;
 
         for (int j = 0; j < height; j++) {
             for (int i = 0; i < width; i++) {
@@ -107,6 +112,8 @@ public class NewImageUtil {
                             sf.hTop, sf.hMid, sf.hBottom,
                             sf.vLeft, sf.vMid, sf.vRight,
                             sf.lTop, sf.lMid, sf.lBottom));
+
+                    detectedCounter = detectedCounter + 1;
 
                     int epNumber = sf.endpoints.size();
                     /*
@@ -130,13 +137,15 @@ public class NewImageUtil {
                     int f9 = b2I(sf.lBottom);
                     int featuresPow = f1+f2+f3+f4+f5+f6+f7+f8+f9;
 
+                    int[] myarray = new int[2];
                     myarray[0] = epNumber;
                     myarray[1] = featuresPow;
+                    myList.add(detectedCounter-1,myarray);
                 }
             }
         }
         textView.setText(stringBuffer);
-        return myarray;
+        return myList;
     }
 
     public static int b2I(boolean value){ //boolean to integer
