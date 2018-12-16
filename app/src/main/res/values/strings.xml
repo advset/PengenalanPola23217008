@@ -12,4 +12,5 @@
     <string name="tugas6">Tugas 6 (UTS) ASCII Character Recognition</string>
     <string name="tugas7">Tugas 7 Handwriting Character Recognition</string>
     <string name="tugas8dan9">Tugas 8 dan 9 Face Detection</string>
+    <string name="tugas10">Tugas 10 (UAS) Discrete Fourier Transform</string>
 </resources>

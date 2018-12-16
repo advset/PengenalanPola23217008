@@ -156,5 +156,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(tugas8dan9Intent);
             }
         });
+
+        // Find the View that shows the Tugas 10
+        TextView tugas10 = (TextView) findViewById(R.id.tugas10);
+
+        // Set a click listener on that View
+        tugas10.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent tugas10Intent = new Intent(MainActivity.this, UAS.class);
+                startActivity(tugas10Intent);
+            }
+        });
     }
 }

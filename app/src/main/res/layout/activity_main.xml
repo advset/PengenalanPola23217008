@@ -88,5 +88,11 @@
             android:id="@+id/tugas8dan9"
             android:background="@color/color3"
             android:text="@string/tugas8dan9" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:id="@+id/tugas10"
+            android:background="@color/color4"
+            android:text="@string/tugas10" />
     </LinearLayout>
 </ScrollView>
