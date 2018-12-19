@@ -136,45 +136,11 @@
             android:id="@+id/process2_button"
             android:onClick="doIDFT"/>
 
-        <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+        <ImageView
+            android:id="@+id/imgInverseReal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/imgInverseMagnitude"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="200dp"
-                android:scaleType="centerInside" />
-            <ImageView
-                android:id="@+id/imgInverseAngle"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="200dp"
-                android:scaleType="centerInside" />
-        </LinearLayout>
-
-        <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/imgInverseReal"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="200dp"
-                android:scaleType="centerInside" />
-            <ImageView
-                android:id="@+id/imgInverseImaginer"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="200dp"
-                android:scaleType="centerInside" />
-        </LinearLayout>
+            android:layout_height="200dp"
+            android:scaleType="centerInside" />
 
     </LinearLayout>
 </ScrollView>
